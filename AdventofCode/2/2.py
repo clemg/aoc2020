@@ -16,7 +16,7 @@ with open("input", "r") as fi:
             if l == letter:
                 count += 1
         
-        if count >= num1+1 and count <= num2:
+        if count >= num1+1 and count <= num2+1:
             correct_pass1 += 1
         
         # Part 2
