@@ -15,10 +15,10 @@ with open("input", "r") as fi:
         for l in password:
             if l == letter:
                 count += 1
-        
+
         if count >= num1+1 and count <= num2+1:
             correct_pass1 += 1
-        
+
         # Part 2
         if((password[num1] == letter and password[num2] != letter) or (password[num2] == letter and password[num1] != letter)):
             correct_pass2 += 1
