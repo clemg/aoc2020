@@ -2,7 +2,7 @@ from itertools import combinations
 from math import prod
 
 numbers = []
-with open('input') as fi:
+with open("input", "r") as fi:
     for line in fi:
         numbers.append(int(line))
 
