@@ -14,9 +14,7 @@ for line in file:
     password = line.split(" ")[2]
 
     # Part 1
-    for l in password:
-        if l == letter:
-            count += 1
+    count = password.count(letter)
 
     if count >= num1+1 and count <= num2+1:
         correct_pass1 += 1
