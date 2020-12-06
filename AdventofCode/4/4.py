@@ -2,7 +2,7 @@ with open("input", "r") as fi:
     file = fi.read()
 
 # Part 1
-number_part1 = 0
+p1 = 0
 lines = file.split("\n\n")
 lines = [elem.split() for elem in lines]
 
@@ -17,10 +17,10 @@ for line in lines:
     if not all(prop in props for prop in required_props):
         continue
 
-    number_part1 += 1
+    p1 += 1
 
 # Part 2
-number_part2 = 0
+p2 = 0
 lines = file.split("\n\n")
 lines = [elem.split() for elem in lines]
 
@@ -54,6 +54,6 @@ for line in lines:
     if not props["pid"].isdigit() or not len(props["pid"]) == 9:
         continue
 
-    number_part2 += 1
+    p2 += 1
 
-print(number_part1, number_part2)
+print(p1, p2)
