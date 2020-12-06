@@ -1,10 +1,8 @@
 from itertools import combinations
 from math import prod
 
-numbers = []
 with open("input", "r") as fi:
-    for line in fi:
-        numbers.append(int(line))
+    numbers = [int(line) for line in fi.read().splitlines()]
 
 # Part 1
 for combi in combinations(numbers, 2):
