@@ -30,9 +30,9 @@ def get_col_id(s):
     return int(mini)
 
 # Part 1
-max_id = 0
+p1 = 0
 for line in file:
-    max_id = max(max_id,get_row_id(line) * 8 + get_col_id(line))
+    p1 = max(p1, get_row_id(line) * 8 + get_col_id(line))
 
 # Part 2
 ids = []
@@ -41,6 +41,6 @@ for line in file:
 
 for seat in sorted(ids):
     if seat + 1 not in ids and seat + 2 in ids:
-        my_seat = seat + 1
+        p2 = seat + 1
 
-print(max_id, my_seat)
+print(p1, p2)
