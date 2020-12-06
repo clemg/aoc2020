@@ -1,7 +1,7 @@
-correct_pass1 = correct_pass2 = 0
-
 with open("input", "r") as fi:
     file = fi.readlines()
+
+p1 = p2 = 0
 
 for line in file:
     count = 0
@@ -14,13 +14,11 @@ for line in file:
     password = line.split(" ")[2]
 
     # Part 1
-    count = password.count(letter)
-
-    if num1+1 <= count <= num2+1:
-        correct_pass1 += 1
+    if num1+1 <= password.count(letter) <= num2+1:
+        p1 += 1
 
     # Part 2
     if((password[num1] == letter and password[num2] != letter) or (password[num2] == letter and password[num1] != letter)):
-        correct_pass2 += 1
+        p2 += 1
 
-print(correct_pass1, correct_pass2)
+print(p1, p2)
