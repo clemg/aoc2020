@@ -16,7 +16,7 @@ for line in file:
     # Part 1
     count = password.count(letter)
 
-    if count >= num1+1 and count <= num2+1:
+    if num1+1 <= count <= num2+1:
         correct_pass1 += 1
 
     # Part 2
