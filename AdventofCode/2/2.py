@@ -4,8 +4,6 @@ with open("input", "r") as fi:
 p1 = p2 = 0
 
 for line in file:
-    count = 0
-
     # - 1 because the string starts at 1
     num1 = int(line.split("-")[0])-1
     num2 = int(line.split("-")[1][:2])-1
