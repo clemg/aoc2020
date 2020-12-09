@@ -6,7 +6,7 @@ with open("input") as fi:
 # Part 1
 p1 = 0
 for line in range(25, len(file)):
-    if not any(a + b == file[line] for a, b in combinations(file[line-25:line], 2)):
+    if not any(sum(combi) == file[line] for combi in combinations(file[line-25:line], 2)):
         p1 = file[line]
 
 # Part 2
