@@ -5,15 +5,15 @@ with open("input", "r") as fi:
 ptr = 0
 one, three = 0, 1
 
-for i in file:
-    if i == ptr+1:
+for n in file:
+    if n == ptr+1:
         one += 1
-        ptr = i
-    elif i == ptr+2:
-        ptr = i
-    elif i == ptr+3:
+        ptr = n
+    elif n == ptr+2:
+        ptr = n
+    elif n == ptr+3:
         three += 1
-        ptr = i
+        ptr = n
 
 p1 = one * three
 
