@@ -1,4 +1,4 @@
-with open("input") as fi:
+with open("input", "r") as fi:
     file = [line.strip() for line in fi.readlines()]
 
 # Part 1
